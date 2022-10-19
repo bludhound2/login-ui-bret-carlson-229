@@ -32,7 +32,6 @@ h1 {
 }
 
 /* LOGO CODE */
-
 h1#the_logo .logo_name span {
     color: #cc382a;
     font-weight: 900;
@@ -64,7 +63,6 @@ h1#the_logo {
 }
 
 /* Form Code */
-
 form {
     display: flex;
     flex-flow:column nowrap;
@@ -82,9 +80,36 @@ input {
     margin-top: 10px;
 }
 
-input[type="button"] {
+/* Original button code
+    input[type="button"] {
     width: 75px;
     border: 2px solid;
     background-color: rgb(183, 182, 182);
     margin-bottom: 10px;
+} */
+
+/* New button code */
+.cool-button {
+    border: 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #cc382a;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.cool-button:hover {
+    background-color: #f64737;
+}
+
+.cool-button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
