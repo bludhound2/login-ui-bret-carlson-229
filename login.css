@@ -15,7 +15,7 @@ html,body{
     border-width: 1px;
     border-radius: 12px;
     border-color: rgba(0,0,0,0.3);
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(255, 255, 255, 0.5);
     min-width: 30%;
     min-height: 20%;
     display: flex;
@@ -126,3 +126,12 @@ label{
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
+.golden-gate {
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    object-fit: fill;
+  }
